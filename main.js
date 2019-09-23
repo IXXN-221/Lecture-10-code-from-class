@@ -35,7 +35,7 @@ function sayComplement(name, shoe, society){
 }
 
 
-window.onload = () => sayComplement('Kent', 'Loafers', 'High')
+// window.onload = () => sayComplement('Kent', 'Loafers', 'High')
 
 
 //Practice:
@@ -44,11 +44,19 @@ window.onload = () => sayComplement('Kent', 'Loafers', 'High')
 //     let pracArray = [34,55,43,56,97,26,23,78,39]
 
 //     document.getElementById('arrayHolder').innerHTML = pracArray
-//     document.getElementById('lowest').innerHTML = findLowest()
+//     document.getElementById('lowest').innerHTML = findLowest(pracArray)
 
 //     function findLowest(arr){
 //             // create loop to find the lowest number
+//             let minNum = arr[0]
+//             for(let i=0; i<arr.length; i++){
+//                 if(minNum > arr[i]){
+//                     minNum = arr[i]
+//             }
+            
 //     }
+//     return minNum
+// }
 // }
 
 
@@ -57,11 +65,26 @@ window.onload = () => sayComplement('Kent', 'Loafers', 'High')
 
 // //Reading input values from fields
 
-// function isCool(){
-//     console.log(`Yes, ${document.getElementById("colour").value} is cool.`)
-// }
+function isCool(){
+    console.log(`Yes, ${document.getElementById("colour").value} is cool.`)
+}
+
 
 // //Practice: Try creating a conditional statement that compares your number to a random number by console logging "[your number] is greater than [random number]" or "[your number] is less than [random number]"
+
+
+
+function compare(){
+
+    let randomNumber = Math.random()*50
+    let myNumber = document.getElementById("colour").value
+
+    if(myNumber>randomNumber){
+        console.log(`${myNumber} is greater than ${randomNumber}`)
+    } else {
+        console.log(`${myNumber} is less than ${randomNumber}`)
+    }
+}
 
 
 
